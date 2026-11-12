@@ -1,0 +1,134 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<title>HOT BEC</title><meta name="viewport" content="width=device-width, initial-scale=1.0">
+</head>
+<link rel="stylesheet" 
+href="style.css">
+<body>
+<header class="encabezado">
+    <div class="logos">
+    <img src="imagenes/logo.png"
+    alt="logo de hotbec" class="logo">
+<h1>HOT BEC</h1> 
+    </div>
+<nav>
+<a href="index.html">INICIO</a> 
+<a href="Productos.html">PRODUCTOS</a>
+<a href="Noticias.html">NOTICIAS</a>
+<a href="Nosotros.html">NOSOTROS</a>
+<a href="Contactos.html">CONTACTOS</a>
+</nav> 
+</header>
+<!-- Banner -->
+
+      <div class="contenedor-carrusel">
+  <div class="diapositiva activa"> 
+     <img src="imagenes/carrusel1.png" alt="Imagen 1"></div>
+
+  <div class="diapositiva">  
+    <img src="imagenes/carrusel2.png" alt="Imagen 2"></div>
+
+  <div class="diapositiva"> 
+     <img src="imagenes/carrusel3.jpeg" alt="Imagen 3"></div>
+
+       </div>
+<main>
+  
+<section id="historia">
+    <h2>Historia de Hotbeck</h2>
+    <div class="contenido-historia">
+        <div class="multimedia-historia">
+            <img src="imagenes/FABRICAS.png" alt="fabrica de Hotbeck">
+          <video controls>
+            <source src="imagenes/FABRICA.mp4" type="video/mp4">
+          </video>
+        </div>
+        <div class="texto-historia">
+            <h3>Nuestra Historia</h3>
+            <p>
+            HOTBEC nació de un sueño familiar, con la visión de traer el máximo bienestar, la innovación tecnológica y el confort a los pies de cada hogar. Desde sus humildes comienzos, la empresa ha crecido impulsada por la pasión por el desarrollo textil y el compromiso inquebrantable con la salud y la calidad de sus productos. Cada par de medias cuenta una historia, desde la selección delas
+fibras   más finas e hilos con tecnología antibacterial avanzada directamente de los productores, hasta la maestría con la que los especialistas y costureros transforman estos elementos en verdaderas piezas de protección y confort.
+            </p>
+        </div>
+    </div>
+</section>
+<section class="metas">
+    
+    <div class="mision">
+            <h2>Mision</h2>
+                Ofrecer a nuestros clientes una experiencia excepcional de protección, 
+                 confort y bienestar diario a través de nuestras medias antibacteriales 
+                HOTBEC, utilizando fibras de la más alta calidad, tecnología antimicrobiana 
+                avanzada y un servicio confiable.</p>
+            </div>
+        </div>
+         <div class="vision">
+            <h2>Vision</h2>
+                <p>Consolidarse como la empresa líder y referente a nivel nacional en la
+                 innovación y calidad de medias antibacteriales,expandiendo  eficientemente 
+                 su red de distribución hacia todas las regiones del Perú en los próximos años</p>
+            </div>
+        </div>
+</section>
+
+     <section class="Nosotros_1">
+<div class="beneficio2">
+<h3>Tecnologia Antibacterial</h3>  <img src="imagenes/tecnoilogia.png"/> <p>Nuestra tecnologia antibacterial ayuda a prevenir lapoliferacion de bacterias que causa el mal olor, manteniendo tus pies frescos, secos y protegidos durante todo el dia, incluso en jornada de uso intenso.
+</p>
+</div> 
+<div class="beneficio2">
+<h3>Maxima Comodidad</h3> <img src="imagenes/comodiad.png"/><p>Suavidad natural confeccionadas con algodon premium de alta calidad que brinda una sensaion suave al contacto con la piel, favorece la traspiracion y proporciona
+</p>
+</div> 
+<div class="beneficio2">
+<h3>Calidad</h3><img src="imagenes/calidad.png"/><p>Ajuste perfecto diseñadas con un ajuste ergonomico que se adapta al pie sin apretar ni deslizarse.Sus costuras reforzadas y materiales resistentes garantizan mayor durabilidad y conford para el uso diario.
+</p>
+</div> 
+<div class="beneficio2">
+<h3>Envios a Domicilio</h3><img src="imagenes/pedidos.png"/><p>Tu pedido es preparado cuidadosamente para que llegue en excelentes condiciones y en el menor tiempo posible.
+</p>
+ </div>
+     </section>
+</main>
+
+<fooder>
+    <div class="fooder-logo">
+        <img src="imagenes/logo.png" 
+        alt="logo de hotbec">
+    </div>
+    <div class="contenido">
+            <div class="columna">
+       <h3><a href="Nosotros.html">NOSOTROS</a> </h3>
+ <a href="Nosotros.html">-Mision y Vision</a>
+ <a href="Nosotros.html">-Valores</a>
+ <a href="Nosotros.html">-Calidad</a>
+           </div>
+           <div class="columna">
+       <h3> <a href="Productos.html">PRODUCTOS</a></h3>
+<a href="Productos.html">-Medias de Dama</a>
+<a href="Productos.html">-Medias de Caballeros</a>
+<a href="Productos.html">-Medias de Deportivas</a>
+<a href="Productos.html">-Medias de niños y niñas</a>
+           </div>
+           <div class="columna">
+       <h3> <a href="Contactos.html">CONTACTOS</a> </h3>
+<a href="https://wa.me/51948189198" target="_blank"> +51 948 189 198</a>
+<a href="mailto:hotbec@gmail.com">-hotbec@gmail.com</a>
+<a href="Contactos.html #ubicacion">-Jiron Garibaldi 475,La Vicatoria,Lima</a>
+            </div>
+</div>
+</fooder>
+      <script>
+    let indice = 0;
+    const imagenes = document.querySelectorAll(".diapositiva");
+
+    setInterval(function() {
+        imagenes[indice].classList.remove("activa");
+        indice = (indice + 1) % imagenes.length;
+        imagenes[indice].classList.add("activa");
+    }, 2000);
+</script>
+</body>
+
