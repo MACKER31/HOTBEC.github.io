@@ -27,6 +27,9 @@ body{
     object-fit: cover;
     transform: scale(1.2);
 }
+.logos h1 {
+    color: #FFFFFF;
+}
 nav{
     display: flex;
     gap: 20px;
