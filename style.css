@@ -1,8 +1,15 @@
 body{
     margin: 0;
     font-family: Arial, Helvetica, sans-serif;
-    background-color: white;
+    background: linear-gradient(
+    135deg,
+    #EAF5FF 0%,
+    #DCEEFF 45%,
+    #F5FAFF 100%
+);
     color: black;
+
+
 }
 .encabezado{
     background-color: #063866;
@@ -133,7 +140,6 @@ nav a {
 .inicio_3 {
     padding : 50px 30px;
      text-align: center;
-     background-color: #95ebfa;
 }
 .inicio_3 h1 {
 width: 90%;
@@ -167,7 +173,7 @@ text-align: center;
     margin-top: 10px;
     font-weight: normal;
 }
-fooder {
+footer {
     background-color: #0a151f;
     padding: 20px;
     display: flex;
@@ -176,7 +182,7 @@ fooder {
     gap: 20px;
    
 }
-.fooder-logo img {
+.footer-logo img {
     width: 70px;
     height: 70px;
     border-radius: 50%;
@@ -213,9 +219,11 @@ fooder {
 .columna a:hover {
     text-decoration: underline;
     color: #00bfff;
+     font-size: 16px;
+    transition: color 0.3s ease;
 }
 
-                             <!-- PRODUCTOS -- >
+                                                                             <!-- PRODUCTOS -- >
 
 .PP {
     padding: 30px 40px;
@@ -223,20 +231,28 @@ fooder {
 .PP .catalogo {
 margin: 30PX;
 }
-.PP .catalogo h1 {
+.PP .catalogo h2 {
     text-align: center;
-    font-size: 60px;
+    font-size: 70px;
     margin-bottom: 40px;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    Font-weight: bold;
 }
-.PP .catalogo h2 {
+.PP .catalogo h3 {
     text-align: left;
-    font-size: 35px;
+    font-size: 40px;
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     margin-bottom: 20px;
     margin-left: 10px;
     margin-top: 150px;
+    Font-weight: bold;
+    transition: color 0.3s ease, transform 0.3s ease;
 }
+.PP h3:hover {
+    color: #2585CF;
+    transform: translateX(8px);
+}
+
 .PP .carruzel {
     display: flex;
     gap: 5px;
@@ -256,11 +272,10 @@ margin: 30PX;
 }
 
 
-                                             <!-- NOSOTROS-->
-.Nosotros_1 {
+                                                                 <!-- NOSOTROS-->
+.Nosotros_1 {                                   
     padding : 50px 30px;
      text-align: center;
-     background-color: #a4cdd4;
      display: flex;
     flex-direction:row;
     justify-content:center;
@@ -270,7 +285,6 @@ margin: 30PX;
     }
 #historia {
     padding: 40px 8%;
-    background-color: #f5f5f5;
 }
 
 #historia > h2 {
@@ -343,6 +357,7 @@ margin: 30PX;
     font-size: 17px;
     line-height: 1.6;
     margin: 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .vision {
     display: flex;
@@ -366,11 +381,11 @@ margin: 30PX;
     font-size: 17px;
     line-height: 1.6;
     margin: 8px 0;
+    font-family: Arial, Helvetica, sans-serif;
 }
 .Nosotros_1 {
     padding : 50px 30px;
      text-align: center;
-     background-color: #a4cdd4;
      display: flex;
     flex-direction:row;
     justify-content:center;
@@ -403,7 +418,7 @@ width: 100%;
     overflow-wrap: break-word;
 }
 
-                                                                  <!-- CONTACTO -- >
+                                                                       <!-- CONTACTO -- >
 #contacto {
     padding: 35px 8%;
     background-color: #f5f5f5;
@@ -463,15 +478,17 @@ width: 100%;
 .texto-whatsapp a {
     display: inline-block;
     padding: 12px 20px;
-    background-color: #2585CF;
-    color: #0ce053;
+    background-color: #128C4A;
+    color: #e8f5e9;
     text-decoration: none;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 20px;
+    font-weight: bold;
+    font-family: Georgia, 'Times New Roman', Times, serif;
 }
 
 .texto-whatsapp a:hover {
-    background-color: #1769a8;
+    background-color: #1b5a0b;
 }
 
 .formulario-contacto {
@@ -531,12 +548,13 @@ width: 100%;
 .formulario-contacto button {
     margin-top: 25px;
     padding: 14px;
-    background-color: #2585CF;
+    background-color: #054b80e7;
     color: #ffffff;
     border: none;
     border-radius: 6px;
     font-size: 17px;
     cursor: pointer;
+    font-weight: bold;
 }
 
 .formulario-contacto button:hover {
@@ -545,31 +563,32 @@ width: 100%;
 
 .informacion-contacto {
     display: flex;
-    align-items: center;
+    align-items: stretch;
     gap: 30px;
     margin-bottom: 50px;
     width: 100%;
 }
 
 .horario-contacto,
-.imagen-contacto {
-    width: 50%;
+.redes-sociales {
+    flex: 1;
+    min-width: 0;
     box-sizing: border-box;
+    padding: 30px;
+    min-height: 187px;
+    background-color: #ffffff;
     border-radius: 12px;
-    overflow: hidden;
-}
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
 
-.horario-contacto {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    padding: 30px;
-    background-color: #ffffff;
-    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.08);
     text-align: center;
 }
-.horario-contacto h2 {
+
+.horario-contacto h2,
+.redes-sociales h2 {
     font-size: 25px;
     margin: 0 0 20px;
 }
@@ -662,8 +681,8 @@ width: 100%;
     object-position: center;
 }
 
-            <!-- NOTICIAS --
-
+                                                                     <!-- NOTICIAS --
+ 
 .Noticias {
     width: 100%;
     padding: 50px 20px;
@@ -741,9 +760,12 @@ width: 100%;
     margin: 0 0 5px 0;
 }
 .datos-publicacion p {
-    color: #777;
+    color: #555555;
     font-size: 12px;
     margin: 0;
+}
+.datos-publicacion time {
+    color: #555555;
 }
 .contenido-publicacion {
     padding: 5px 20px 20px 20px;
@@ -787,7 +809,34 @@ width: 100%;
     padding: 12px 20px;
     border-radius: 7px;
     transition: 0.3s;
+     position: relative;
+    overflow: hidden;
 }
+.acciones-publicacion a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: -80%;
+    width: 50%;
+    height: 100%;
+    background: linear-gradient(
+        120deg,
+        transparent,
+        rgba(255,255,255,0.45),
+        transparent
+    );
+     transform: skewX(-20deg);
+     animation: brillo 3.6s infinite;
+     pointer-events: none;
+     }
+     @keyframes brillo {
+        0%, 60% {
+            left: -80%;
+        }
+        100%{
+            left:140%;
+        }
+    }
 .boton-comprar {
     background-color: #002367;
     color: white;
@@ -941,13 +990,13 @@ width: 100%;
     }
 
     /* TÍTULO PRINCIPAL */
-    .PP .catalogo h1 {
+    .PP .catalogo h2 {
         font-size: 34px;
         margin-bottom: 30px;
     }
 
     /* TÍTULOS DE CATEGORÍAS */
-    .PP .catalogo h2 {
+    .PP .catalogo h3 {
         font-size: 25px;
         margin: 45px 0 15px 5px;
         text-align: left;
@@ -1151,11 +1200,9 @@ width: 100%;
         flex-direction: column;
         gap: 20px;
     }
-
     .horario-contacto,
     .redes-sociales {
         width: 100%;
-        box-sizing: border-box;
     }
 
     .horario-contacto {
@@ -1224,8 +1271,8 @@ width: 100%;
     }
 
     /* OCULTAR ESPACIOS LATERALES */
-    .noticia-isquierda,
-    .noticia-derecha {
+    .noticias-isquierda,
+    .noticias-derecha {
         display: none;
     }
 
@@ -1371,21 +1418,27 @@ width: 100%;
 @media screen and (max-width: 700px) {
 
     .contenedor-carrusel {
-        max-width: 100%;
+        width: 100%;
+        height: 220px;
         overflow: hidden;
     }
 
-    .diapositiva img {
-        max-width: 100%;
-        height: auto;
+    .diapositiva {
+        width: 100%;
+        height: 100%;
     }
 
+    .diapositiva img {
+        width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+    }
 }
-
 /* ADAPTACIÓN DEL FOOTER */
 @media (max-width: 700px) {
 
-    fooder {
+    footer {
         flex-direction: column;
         align-items: center;
         gap: 25px;
@@ -1394,13 +1447,13 @@ width: 100%;
         width: 100%;
     }
 
-    .fooder-logo {
+    .footer-logo {
         display: flex;
         justify-content: center;
         width: 100%;
     }
 
-    .fooder-logo img {
+    .footer-logo img {
         width: 75px;
         height: 75px;
         margin: 0;
